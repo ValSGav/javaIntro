@@ -1,5 +1,3 @@
-package Seminar1;
-
 public class task2 {
     public static void main(String[] args) {
         int[] arr = { 2, 3, 4, 3, 3, 1, 5, 3, 3 };
