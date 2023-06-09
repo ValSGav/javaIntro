@@ -64,16 +64,17 @@ public class HomeWorkTask3 {
                     break;
             }
 
-            if (firstNumber.equals("q") || secondNumber.equals("q")
+            if (firstNumber.equals("q")
+                    || secondNumber.equals("q")
                     || operation.equals("q"))
                 isExit = true;
 
         }
         sc.close();
-        
+
         // String a = "asdfas/fda";
         // if (a.contains(String.valueOf("/"))){
-        //operatorPosition = a.indexOf("/");
+        // operatorPosition = a.indexOf("/");
 
     }
 }
