@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-06-12T17:10:42.524755800Z</date>
+  <millis>1686589842524</millis>
+  <nanos>755800</nanos>
+  <sequence>0</sequence>
+  <logger>HomeWorkTask2</logger>
+  <level>INFO</level>
+  <class>Seminar2.HomeWorkTask2</class>
+  <method>sortArray</method>
+  <thread>1</thread>
+  <message>3;7;1;2;5;8;4</message>
+</record>
+<record>
+  <date>2023-06-12T17:10:42.576756800Z</date>
+  <millis>1686589842576</millis>
+  <nanos>756800</nanos>
+  <sequence>1</sequence>
+  <logger>HomeWorkTask2</logger>
+  <level>INFO</level>
+  <class>Seminar2.HomeWorkTask2</class>
+  <method>sortArray</method>
+  <thread>1</thread>
+  <message>3;1;7;2;5;8;4</message>
+</record>
+<record>
+  <date>2023-06-12T17:10:42.578772800Z</date>
+  <millis>1686589842578</millis>
+  <nanos>772800</nanos>
+  <sequence>2</sequence>
+  <logger>HomeWorkTask2</logger>
+  <level>INFO</level>
+  <class>Seminar2.HomeWorkTask2</class>
+  <method>sortArray</method>
+  <thread>1</thread>
+  <message>3;1;2;7;5;8;4</message>
+</record>
+<record>
+  <date>2023-06-12T17:10:42.580758900Z</date>
+  <millis>1686589842580</millis>
+  <nanos>758900</nanos>
+  <sequence>3</sequence>
+  <logger>HomeWorkTask2</logger>
+  <level>INFO</level>
+  <class>Seminar2.HomeWorkTask2</class>
+  <method>sortArray</method>
+  <thread>1</thread>
+  <message>3;1;2;5;7;8;4</message>
+</record>
+<record>
+  <date>2023-06-12T17:10:42.581758500Z</date>
+  <millis>1686589842581</millis>
+  <nanos>758500</nanos>
+  <sequence>4</sequence>
+  <logger>HomeWorkTask2</logger>
+  <level>INFO</level>
+  <class>Seminar2.HomeWorkTask2</class>
+  <method>sortArray</method>
+  <thread>1</thread>
+  <message>3;1;2;5;7;4;8</message>
+</record>
+<record>
+  <date>2023-06-12T17:10:42.582760700Z</date>
+  <millis>1686589842582</millis>
+  <nanos>760700</nanos>
+  <sequence>5</sequence>
+  <logger>HomeWorkTask2</logger>
+  <level>INFO</level>
+  <class>Seminar2.HomeWorkTask2</class>
+  <method>sortArray</method>
+  <thread>1</thread>
+  <message>1;3;2;5;7;4;8</message>
+</record>
+<record>
+  <date>2023-06-12T17:10:42.583758900Z</date>
+  <millis>1686589842583</millis>
+  <nanos>758900</nanos>
+  <sequence>6</sequence>
+  <logger>HomeWorkTask2</logger>
+  <level>INFO</level>
+  <class>Seminar2.HomeWorkTask2</class>
+  <method>sortArray</method>
+  <thread>1</thread>
+  <message>1;2;3;5;7;4;8</message>
+</record>
+<record>
+  <date>2023-06-12T17:10:42.584755300Z</date>
+  <millis>1686589842584</millis>
+  <nanos>755300</nanos>
+  <sequence>7</sequence>
+  <logger>HomeWorkTask2</logger>
+  <level>INFO</level>
+  <class>Seminar2.HomeWorkTask2</class>
+  <method>sortArray</method>
+  <thread>1</thread>
+  <message>1;2;3;5;4;7;8</message>
+</record>
+<record>
+  <date>2023-06-12T17:10:42.585755800Z</date>
+  <millis>1686589842585</millis>
+  <nanos>755800</nanos>
+  <sequence>8</sequence>
+  <logger>HomeWorkTask2</logger>
+  <level>INFO</level>
+  <class>Seminar2.HomeWorkTask2</class>
+  <method>sortArray</method>
+  <thread>1</thread>
+  <message>1;2;3;4;5;7;8</message>
+</record>
+</log>
