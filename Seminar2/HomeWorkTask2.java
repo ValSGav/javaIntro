@@ -27,7 +27,7 @@ public class HomeWorkTask2 {
     public static void sortArray(int[] arr) {
         Logger logger = Logger.getLogger("HomeWorkTask2");
         try {
-            FileHandler fh = new FileHandler("log.txt");
+            FileHandler fh = new FileHandler("seminar2/log.txt");
             ConsoleHandler ch = new ConsoleHandler();
             logger.removeHandler(ch);
             logger.addHandler(fh);

@@ -10,7 +10,7 @@ public class task3 {
         String text = "TEST";
 
         try {
-            FileWriter fwriter = new FileWriter("file_test.txt");
+            FileWriter fwriter = new FileWriter("seminar2/file_test.txt");
             for (int i = 0; i < 10; i++) {
                 fwriter.write(i + " - " + text);
                 fwriter.write("\n");
@@ -24,10 +24,10 @@ public class task3 {
 
 
         
-        File fl = new File("file.txt"); 
+        File fl = new File("seminar2/file.txt"); 
         try {
             
-            FileReader fr = new FileReader("file.txt");
+            FileReader fr = new FileReader("Seminar2/file.txt");
             char[] arr = new char[(int) fl.length()];
             fr.read(arr);
         } catch (Exception e) {
