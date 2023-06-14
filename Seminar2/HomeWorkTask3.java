@@ -11,8 +11,7 @@ package Seminar2;
 import java.io.FileReader;
 import java.io.File;
 import java.nio.charset.Charset;
-import java.util.Map;
-import java.util.HashMap;
+
 
 public class HomeWorkTask3 {
     public static void main(String[] args) {
@@ -24,12 +23,12 @@ public class HomeWorkTask3 {
             char[] buff = new char[(int) fl.length()];
             fr.read(buff);
 
-            String[] arrayOfStringStudentsData = parseStringFromFile(buff.toString());
+            //String[] arrayOfStringStudentsData = parseStringFromFile(buff.toString());
 
-            for (String stringStudentData : arrayOfStringStudentsData) {
-                Map<String, String> mapOfData = new HashMap<>();
-                String arrayOfData[] = parseStringOfData(stringStudentData);
-            }
+            // for (String stringStudentData : arrayOfStringStudentsData) {
+               
+            //     //String arrayOfData[] = parseStringOfData(stringStudentData);
+            // }
 
             fr.close();
         } catch (Exception e) {

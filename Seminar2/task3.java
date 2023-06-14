@@ -11,7 +11,7 @@ public class task3 {
 
         try {
             FileWriter fwriter = new FileWriter("seminar2/file_test.txt");
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < n; i++) {
                 fwriter.write(i + " - " + text);
                 fwriter.write("\n");
 
@@ -30,6 +30,7 @@ public class task3 {
             FileReader fr = new FileReader("Seminar2/file.txt");
             char[] arr = new char[(int) fl.length()];
             fr.read(arr);
+            fr.close();
         } catch (Exception e) {
             // TODO: handle exception
         }

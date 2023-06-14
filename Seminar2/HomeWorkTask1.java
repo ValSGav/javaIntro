@@ -8,6 +8,9 @@ package Seminar2;
 import java.util.Scanner;
 
 public class HomeWorkTask1 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         
         String queueString = "select * from students WHERE";
@@ -16,6 +19,7 @@ public class HomeWorkTask1 {
         Scanner sc = new Scanner(System.in, "cp866");
         System.out.println("Введите строку условий, которую Вы хотите добавить к запросу: ");
         String jsonString = sc.nextLine();
+        sc.close();
         StringBuilder workStr = new StringBuilder(queueString);
 
         String[] arrStrings = 
