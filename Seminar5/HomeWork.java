@@ -2,20 +2,43 @@ package Seminar5;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-import javax.naming.ldap.HasControls;
-
 public class HomeWork {
+
+
+    //Позаимствовал сортировку мэпа из интернетов, но я разобрался, честно!
+    //Просто не нашел сортировки по value, везде пишут, что comporator можно настроить 
+    //исключительно в разрезе ключа мэпа, а тут, насколько я понял(но это не точно), что-то переопределили, и стало можно :)
+    public static <K, V extends Comparable<V>> Map<String, ArrayList<String>> valueSort(final Map<String, ArrayList<String>> map) {
+       
+        Comparator<String> valueComparator = new Comparator<String>() {
+            // return comparison results of values of
+            // two keys
+            public int compare(String k1, String k2) {
+                if (map.get(k1).size() < map.get(k2).size())
+                    return 1;
+                else
+                    return -1;
+            }
+
+        };
+
+        // SortedMap created using the comparator
+        Map<String, ArrayList<String>> sorted = new TreeMap<String, ArrayList<String>>(valueComparator);
+
+        sorted.putAll(map);
+
+        return sorted;
+    }
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in, "cp866");
         String stringMenu = "1 - Добавить контакт \n2 - Вывести всех \n3 - Выход\n>>:";
-        Map<String, String> phoneBase = new HashMap<String, String>(0);
+        Map<String, ArrayList<String>> phoneBase = new TreeMap<String, ArrayList<String>>();
 
         System.out.print(stringMenu);
 
@@ -43,34 +66,25 @@ public class HomeWork {
         sc.close();
     }
 
-    public static void addContact(Scanner sc, Map<String, String> phoneBase) {
-        
+    public static void addContact(Scanner sc, Map<String, ArrayList<String>> phoneBase) {
+
         System.out.println("Введите фамилию:");
         String surnameString = sc.nextLine();
         System.out.println("Введите телефон:");
         String phoneString = sc.nextLine();
 
-        phoneBase.put(phoneString, surnameString);
-        
-    }
-
-    public static void showContacts(Map<String, String> phoneBase){
-        TreeMap<String, ArrayList<String>> phoneBaseGrouped = new TreeMap<String, ArrayList<String>>();
-        phoneBaseGrouped.comparator().;
-
-        phoneBase.values().iterator()
-
-        for (var item : phoneBase.entrySet()) {
-            if (phoneBaseGrouped.get(item.getValue()) == null){
-                phoneBaseGrouped.put(item.getValue(), new ArrayList<String>());
-            } 
-            
-            phoneBaseGrouped.get(item.getValue()).add(item.getKey());
+        if (!phoneBase.containsKey(surnameString)){
+            phoneBase.put(surnameString, new ArrayList<String>());
         }
 
-        phoneBaseGrouped.sort
-
-        System.out.println(phoneBaseGrouped);
+        phoneBase.get(surnameString).add(phoneString);
 
     }
+
+    public static void showContacts(Map<String, ArrayList<String>> phoneBase) {
+
+        System.out.println(valueSort(phoneBase));
+
+    }
+
 }
