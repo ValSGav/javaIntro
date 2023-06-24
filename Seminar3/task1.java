@@ -31,6 +31,7 @@ public class task1 {
         }
 
         List<Character> list1 = List.of('1', '2','3');
+        System.out.println(list1);
 
     }
 }

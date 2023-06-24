@@ -1,9 +1,8 @@
 package Seminar4;
 
-import java.nio.charset.Charset;
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.zip.Inflater;
+
 
 public class HomeWork {
 
