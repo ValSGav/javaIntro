@@ -4,8 +4,6 @@ package Seminar6;
 // в данном массиве и верните его в виде числа с плавающей запятой.
 //процент уникальных числел = количество уникальных числе *100/ общее количество числе в массиве
 
-import java.nio.channels.FileLock;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Random;

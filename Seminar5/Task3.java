@@ -37,7 +37,6 @@ public class Task3 {
         System.out.printf("Входная строка: %s \n", inputString);
 
         Character currentChar = ' ';
-        Character fromStackChar = ' ';
 
         Map<Character, Character> openClosingPair = new TreeMap<Character, Character>();
         
